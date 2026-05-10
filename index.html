@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>สบายโฮม | ร้านค้าออนไลน์สำหรับบ้านไทย</title>
+    <meta
+      name="description"
+      content="ร้านค้าออนไลน์ภาษาไทยสำหรับสินค้าใช้ในบ้านและดูแลตัวเอง พร้อมชำระเงิน PromptPay, COD และจัดส่งทั่วประเทศไทย"
+    />
+    <meta name="theme-color" content="#0f3d2e" />
+    <meta property="og:title" content="สบายโฮม | ร้านค้าออนไลน์สำหรับบ้านไทย" />
+    <meta
+      property="og:description"
+      content="สินค้าใช้ในบ้านและดูแลตัวเอง กลิ่น botanical แบบไทย ส่งไวทั่วประเทศ"
+    />
+    <meta property="og:image" content="assets/thai-hero.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <p>ส่งฟรีทั่วไทยเมื่อซื้อครบ ฿1,200 · ชำระผ่าน PromptPay, บัตรเครดิต หรือเก็บเงินปลายทาง</p>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="สบายโฮม">
+        <span class="brand-mark">ส</span>
+        <span>
+          <strong>สบายโฮม</strong>
+          <small>SABAI HOME</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="หลัก">
+        <a href="#products">สินค้า</a>
+        <a href="#bundles">เซ็ตประหยัด</a>
+        <a href="#reviews">รีวิว</a>
+        <a href="#delivery">การจัดส่ง</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-shell" aria-label="ค้นหาสินค้า">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input id="searchInput" type="search" placeholder="ค้นหา" autocomplete="off" />
+        </label>
+        <button class="icon-button" type="button" id="cartButton" aria-label="เปิดตะกร้า">
+          <i data-lucide="shopping-bag" aria-hidden="true"></i>
+          <span id="cartCount">0</span>
+        </button>
+        <button class="icon-button mobile-only" type="button" id="menuButton" aria-label="เปิดเมนู">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="เมนูมือถือ">
+      <a href="#products">สินค้า</a>
+      <a href="#bundles">เซ็ตประหยัด</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#delivery">การจัดส่ง</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">ร้านค้าไทย · ส่งจากกรุงเทพฯ</span>
+          <h1>ของใช้บ้านและดูแลตัวเองที่เข้ากับชีวิตเมืองร้อน</h1>
+          <p>
+            สูตรกลิ่น botanical แบบไทย บรรจุภัณฑ์เติมซ้ำได้ และบริการจัดส่งที่ออกแบบมาสำหรับลูกค้าในประเทศไทย
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#products">
+              <span>ช้อปสินค้า</span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="secondary-button" href="#bundles">ดูเซ็ตเริ่มต้น</a>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>1-3 วัน</dt>
+              <dd>จัดส่งเขตเมืองหลัก</dd>
+            </div>
+            <div>
+              <dt>4.9/5</dt>
+              <dd>คะแนนจากลูกค้าไทย</dd>
+            </div>
+            <div>
+              <dt>7 วัน</dt>
+              <dd>เปลี่ยนคืนได้</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-media">
+          <img src="assets/thai-hero.png" alt="ชุดสินค้าใช้ในบ้านและดูแลตัวเองบนโต๊ะสไตล์เมืองร้อน" />
+          <div class="hero-offer" aria-label="โปรโมชัน">
+            <span>โปรเดือนนี้</span>
+            <strong>ลด 15%</strong>
+            <small>เมื่อซื้อ 2 ชิ้นขึ้นไป</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-row" aria-label="จุดเด่นบริการ">
+        <div>
+          <i data-lucide="truck" aria-hidden="true"></i>
+          <span>ส่งทั่วไทย</span>
+        </div>
+        <div>
+          <i data-lucide="scan-line" aria-hidden="true"></i>
+          <span>PromptPay พร้อมเพย์</span>
+        </div>
+        <div>
+          <i data-lucide="shield-check" aria-hidden="true"></i>
+          <span>รับประกันสินค้า 7 วัน</span>
+        </div>
+        <div>
+          <i data-lucide="message-circle" aria-hidden="true"></i>
+          <span>แอดมินไทยตอบไว</span>
+        </div>
+      </section>
+
+      <section class="collection" id="products">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">คอลเลกชันหลัก</span>
+            <h2>สินค้าขายดีสำหรับบ้านไทย</h2>
+          </div>
+          <div class="filters" aria-label="กรองสินค้า">
+            <button class="filter is-active" type="button" data-filter="all">ทั้งหมด</button>
+            <button class="filter" type="button" data-filter="home">บ้าน</button>
+            <button class="filter" type="button" data-filter="care">ดูแลตัวเอง</button>
+            <button class="filter" type="button" data-filter="bundle">เซ็ต</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="home" data-name="น้ำยาซักผ้ารีฟิล กลิ่นตะไคร้">
+            <div class="product-visual visual-laundry">
+              <span class="product-badge">ขายดี</span>
+              <div class="pack pack-pouch"></div>
+            </div>
+            <div class="product-info">
+              <p class="product-type">รีฟิล 900 มล.</p>
+              <h3>น้ำยาซักผ้ารีฟิล กลิ่นตะไคร้</h3>
+              <div class="rating" aria-label="คะแนน 4.9 จาก 5">★★★★★ <span>4.9</span></div>
+              <div class="price-row">
+                <strong>฿329</strong>
+                <button class="add-button" type="button" data-product="น้ำยาซักผ้ารีฟิล กลิ่นตะไคร้" data-price="329">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="care" data-name="เจลอาบน้ำใบมะกรูด">
+            <div class="product-visual visual-shower">
+              <span class="product-badge">ใหม่</span>
+              <div class="pack pack-bottle"></div>
+            </div>
+            <div class="product-info">
+              <p class="product-type">ขวด 420 มล.</p>
+              <h3>เจลอาบน้ำใบมะกรูด</h3>
+              <div class="rating" aria-label="คะแนน 4.8 จาก 5">★★★★★ <span>4.8</span></div>
+              <div class="price-row">
+                <strong>฿249</strong>
+                <button class="add-button" type="button" data-product="เจลอาบน้ำใบมะกรูด" data-price="249">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="home" data-name="เทียนหอมลำไยและไม้ซีดาร์">
+            <div class="product-visual visual-candle">
+              <div class="pack pack-jar"></div>
+            </div>
+            <div class="product-info">
+              <p class="product-type">ถ้วยแก้ว 180 กรัม</p>
+              <h3>เทียนหอมลำไยและไม้ซีดาร์</h3>
+              <div class="rating" aria-label="คะแนน 4.7 จาก 5">★★★★★ <span>4.7</span></div>
+              <div class="price-row">
+                <strong>฿390</strong>
+                <button class="add-button" type="button" data-product="เทียนหอมลำไยและไม้ซีดาร์" data-price="390">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="bundle" data-name="เซ็ตดูแลบ้านเริ่มต้น">
+            <div class="product-visual visual-bundle">
+              <span class="product-badge">คุ้มค่า</span>
+              <div class="pack pack-group"></div>
+            </div>
+            <div class="product-info">
+              <p class="product-type">4 ชิ้น</p>
+              <h3>เซ็ตดูแลบ้านเริ่มต้น</h3>
+              <div class="rating" aria-label="คะแนน 5 จาก 5">★★★★★ <span>5.0</span></div>
+              <div class="price-row">
+                <strong>฿899</strong>
+                <button class="add-button" type="button" data-product="เซ็ตดูแลบ้านเริ่มต้น" data-price="899">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="home" data-name="สเปรย์ผ้าฝ้ายหอม">
+            <div class="product-visual visual-spray">
+              <div class="pack pack-spray"></div>
+            </div>
+            <div class="product-info">
+              <p class="product-type">สเปรย์ 250 มล.</p>
+              <h3>สเปรย์ผ้าฝ้ายหอม</h3>
+              <div class="rating" aria-label="คะแนน 4.8 จาก 5">★★★★★ <span>4.8</span></div>
+              <div class="price-row">
+                <strong>฿219</strong>
+                <button class="add-button" type="button" data-product="สเปรย์ผ้าฝ้ายหอม" data-price="219">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="care" data-name="ครีมมือขมิ้นและน้ำผึ้ง">
+            <div class="product-visual visual-handcream">
+              <span class="product-badge">พกง่าย</span>
+              <div class="pack pack-tube"></div>
+            </div>
+            <div class="product-info">
+              <p class="product-type">หลอด 60 มล.</p>
+              <h3>ครีมมือขมิ้นและน้ำผึ้ง</h3>
+              <div class="rating" aria-label="คะแนน 4.6 จาก 5">★★★★☆ <span>4.6</span></div>
+              <div class="price-row">
+                <strong>฿180</strong>
+                <button class="add-button" type="button" data-product="ครีมมือขมิ้นและน้ำผึ้ง" data-price="180">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bundle-band" id="bundles">
+        <div class="bundle-copy">
+          <span class="eyebrow">เซ็ตประหยัด</span>
+          <h2>เริ่มต้นดูแลบ้านทั้งชุดในกล่องเดียว</h2>
+          <p>รวมสินค้าทำความสะอาด ซักผ้า และสเปรย์ผ้า เหมาะสำหรับคอนโด บ้านเช่า และครอบครัวเล็ก</p>
+        </div>
+        <div class="bundle-panel">
+          <div class="bundle-row">
+            <span>เซ็ตดูแลบ้านเริ่มต้น</span>
+            <strong>฿899</strong>
+          </div>
+          <div class="bundle-row">
+            <span>ส่งฟรีทั่วประเทศ</span>
+            <strong>฿0</strong>
+          </div>
+          <div class="bundle-total">
+            <span>รวม</span>
+            <strong>฿899</strong>
+          </div>
+          <button class="primary-button full-width" type="button" id="bundleButton">
+            <span>เพิ่มเซ็ตลงตะกร้า</span>
+            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="section-heading compact">
+          <div>
+            <span class="eyebrow">รีวิวลูกค้า</span>
+            <h2>เสียงจากผู้ใช้ในไทย</h2>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-top">
+              <strong>แพรว · กรุงเทพฯ</strong>
+              <span>★★★★★</span>
+            </div>
+            <p>กลิ่นสะอาด ไม่ฉุน แพ็กเกจดูดีและรีฟิลสะดวก ส่งถึงคอนโดเร็วมาก</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>มินท์ · เชียงใหม่</strong>
+              <span>★★★★★</span>
+            </div>
+            <p>ชอบที่มีเก็บเงินปลายทาง แม่ใช้สเปรย์ผ้าแล้วถามให้สั่งซ้ำอีกขวด</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>ต้น · ชลบุรี</strong>
+              <span>★★★★☆</span>
+            </div>
+            <p>เซ็ตเริ่มต้นคุ้มดี กลิ่นตะไคร้เหมาะกับหน้าฝน บ้านไม่อับ</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="delivery" id="delivery">
+        <div class="delivery-copy">
+          <span class="eyebrow">การจัดส่งและชำระเงิน</span>
+          <h2>พร้อมขายให้ลูกค้าไทยตั้งแต่หน้าแรกจนถึงชำระเงิน</h2>
+        </div>
+        <div class="delivery-grid">
+          <div>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <h3>จัดส่งทั่วประเทศ</h3>
+            <p>กรุงเทพฯ และปริมณฑล 1-2 วัน ต่างจังหวัด 2-4 วันทำการ</p>
+          </div>
+          <div>
+            <i data-lucide="badge-percent" aria-hidden="true"></i>
+            <h3>โปรโมชันเข้าใจง่าย</h3>
+            <p>รองรับซื้อหลายชิ้น ส่วนลดเซ็ต และส่งฟรีตามยอดสั่งซื้อ</p>
+          </div>
+          <div>
+            <i data-lucide="credit-card" aria-hidden="true"></i>
+            <h3>ช่องทางชำระเงินไทย</h3>
+            <p>PromptPay, บัตรเครดิต, โอนธนาคาร และเก็บเงินปลายทาง</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>สบายโฮม</strong>
+        <p>สินค้าใช้ในบ้านและดูแลตัวเองสำหรับลูกค้าไทย</p>
+      </div>
+      <div class="footer-links">
+        <a href="#products">สินค้า</a>
+        <a href="#delivery">จัดส่ง</a>
+        <a href="mailto:hello@sabaihome.example">ติดต่อ</a>
+      </div>
+    </footer>
+
+    <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <span class="eyebrow">ตะกร้าสินค้า</span>
+          <h2>รายการของคุณ</h2>
+        </div>
+        <button class="icon-button" type="button" id="closeCart" aria-label="ปิดตะกร้า">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">ยังไม่มีสินค้าในตะกร้า</p>
+      </div>
+      <div class="cart-summary">
+        <div>
+          <span>ยอดรวม</span>
+          <strong id="cartTotal">฿0</strong>
+        </div>
+        <button class="primary-button full-width" type="button">ไปชำระเงิน</button>
+      </div>
+    </aside>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
